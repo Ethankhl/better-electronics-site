@@ -1,4 +1,7 @@
-<html><head><link rel='stylesheet' href='style.css'></head><body>
+<html><head><link rel='stylesheet' href='style.css'><title>SKU Search</title>
+<script src="script.js"></script>
+</head>
+<body>
 
 <header class="nav">
   <div class="logo"><img src="assets/logo.svg" class="logo-icon"> Better Electronics</div>
@@ -11,6 +14,13 @@
   </nav>
 </header>
 
-<h1>SKU Search</h1>
-<input type="text" placeholder="Search SKU">
+<h1>Find Your Battery by Part Number</h1>
+<p>Enter a laptop battery part number (SKU). Our database supports 1000+ models.</p>
+<input id="skuInput" type="text" placeholder="e.g. RJ40G, F3YGT, AP18C8K" list="skuOptions">
+<button onclick="searchSKU()" class="btn">Search</button>
+<div id="skuResult" class="result"></div>
+
+<datalist id="skuOptions">
+</datalist>
+
 </body></html>
