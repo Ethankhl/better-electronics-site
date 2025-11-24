@@ -1,1 +1,7 @@
-body{font-family:Arial; padding:20px;} nav a{margin:0 10px;}
+
+body { font-family: Arial; margin:0; padding:0; }
+.nav { display:flex; justify-content:space-between; padding:15px 30px; background:#fff; border-bottom:1px solid #ddd; }
+.nav a { margin-left:20px; text-decoration:none; color:#1A73E8; font-weight:bold; }
+.logo { font-size:22px; font-weight:bold; display:flex; align-items:center; gap:10px; }
+.logo-icon { width:32px; }
+.hero { padding:80px 30px; background: linear-gradient(135deg, #1A73E8, #0FA958); color:white; }
